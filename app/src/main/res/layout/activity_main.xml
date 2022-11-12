@@ -1,18 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Решатель квадратных уравнений"
+        android:textColor="#9575CD"
+        android:textSize="30sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Введите первый коэффициент:"
+        android:textSize="22sp"
+        android:textColor="#49928F"
+        />
+
+    <EditText
+        android:id="@+id/a"
+        android:inputType="numberSigned"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Введите число"
+        android:textSize="19sp"
+        android:textColor="#75832D"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Введите второй коэффициент:"
+        android:textSize="22sp"
+        android:textColor="#49928F"
+        />
+
+    <EditText
+        android:id="@+id/b"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Введите число"
+        android:inputType="numberSigned"
+        android:textSize="19sp"
+        android:textColor="#75832D"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Введите третий коэффициент:"
+        android:textSize="22sp"
+        android:textColor="#49928F"
+        />
+
+    <EditText
+        android:id="@+id/c"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Введите число"
+        android:inputType="numberSigned|numberDecimal"
+        android:textSize="19sp"
+        android:textColor="#75832D"
+        />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Корни уравнения:"
+        android:textSize="22sp"
+        android:textColor="#49928F"
+        />
+    <TextView
+        android:id="@+id/roots"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#49928F"
+        />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Просчитать"
+        android:onClick="click"
+        />
+
+
+
+
+
+</LinearLayout>
